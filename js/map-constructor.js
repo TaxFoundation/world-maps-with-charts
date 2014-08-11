@@ -1,3 +1,5 @@
+//This file is not currently in use. It's unstable.
+
 function InternationalMap(args) {
   this.titleText = args.titleText || "Untitled Map";
   this.dataPath = args.dataPath || "data.csv";

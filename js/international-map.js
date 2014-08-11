@@ -1,3 +1,10 @@
+/*
+Dynamically updating world map and bar chart of international corporate taxes.
+Written for the Tax Foundation [taxfoundation.org] by Tom VanAntwerp [tomvanantwerp.com].
+Utilizing the D3.js framework by Mike Bostock. [d3js.org]
+Version 0.2.0
+*/
+
 // Global variables
 // These control the data, color scales, sizes, the legend scale, etc.
 var dataPath = "data/international-corporate-tax-rate-2014.json",
