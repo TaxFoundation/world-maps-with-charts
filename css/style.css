@@ -1,0 +1,119 @@
+body, p {
+  font: 12px sans-serif;
+}
+
+h2 {
+  font: 24px sans-serif;
+  text-align: center;
+  padding: 0;
+  margin: 0 5px 0 5px;
+}
+
+.axis text, text.label {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.legend text {
+  font: 10px sans-serif;
+}
+.legend path {
+  fill: none;
+  stroke: none;
+  shape-rendering: crispEdges;
+}
+
+.title {
+	font: 16px sans-serif;
+}
+
+.bar:hover {
+	fill: #cc333f;
+}
+
+.country:hover {
+	stroke-width: 1.5px;
+}
+
+.tooltip {
+  font: 10px sans-serif;
+  background-color: #fff;
+  padding: 4px;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+select {
+    padding: 3px;
+    margin: 5px 0 5px 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 3px 0 #aaa;
+    -moz-box-shadow: 0 3px 0 #aaa;
+    box-shadow: 0 3px 0 #aaa;
+    background: #ddd;
+    color: #000;
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    select {padding-right: 18px}
+}
+
+label {
+  position: relative;
+  font-size: 14px;
+}
+label: after {
+    content: '<>';
+    font: 10px "Consolas", monospace;
+    color: #333;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 8px;
+    top: 0;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #aaa;
+    position: absolute;
+    pointer-events: none;
+}
+label: before {
+    content: '';
+    right: 6px;
+    top: 0;
+    width: 20px;
+    height: 15px;
+    background: #ddd;
+    position: absolute;
+    pointer-events: none;
+    display: block;
+}
+
+#countries {
+  width: 300px;
+}
+#years {
+  width: 70px;
+}
+#data-types {
+  width: 140px;
+}
